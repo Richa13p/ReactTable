@@ -15,12 +15,13 @@ const Table = () => {
                 <th>Gender</th>
             </tr>
             {data.map ((val)=>{
-              <tr key ={val.id}>
+              {/* <tr key ={val.id}>
                      <td>{val.name}</td>
                      <td>{val.age}</td>
                      <td>{val.gender}</td>
 
-              </tr>
+              </tr> */}
+              console.log(val)
             }
             
             )}
