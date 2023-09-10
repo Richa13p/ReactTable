@@ -1,12 +1,18 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const UseEffect = () => {
+
+    const [count,setCount ] = useState(0);
+  
     useEffect (()=>{
-        console.log("Hello useEffect")
-    })
+        setTimeout (()=>{
+          setCount ((count => count+1))
+        })
+    },(1000));
   return (
     <div>
-
+    <h1> I've  render {count} time
+    </h1>
     </div>
   )
 }
